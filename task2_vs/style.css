@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.countdown {
+    flex: 1;
+    background: url('The design includes __.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.timer-content {
+    text-align: center;
+    width: 80%; 
+    position: absolute; 
+    left: 12%; 
+    top: 52.5%; 
+    transform: translateY(-50%); 
+}
+
+#timer {
+    font-size: 2em; 
+    margin: 10px 0;
+}
+
+button {
+    background-color:#ca8d2d;
+    color: white;
+    border: none;
+    padding: 8px 16px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em; 
+}
+
+button:hover {
+    background-color: goldenrod;
+}
+
+.portfolio {
+    flex: 1;
+    background-color: #eeeee9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px; 
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 10px;
+    margin-top: 100px; 
+    font-size: 2rem;
+    color: #333;
+}
+
+.portfolio img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+    margin-top: 50px; 
+}
+
+.portfolio p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left; 
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto; 
+  font-size: 1.1rem;
+  color: #444;
+  
+}
+
+.portfolio p strong {
+  width: 100px;
+  text-align: left;
+  display: inline-block;
+  color: #222;
+  flex-shrink: 0; 
+}
+
+.portfolio p span {
+  flex: 1; 
+  text-align: left;
+}
+
+#preview-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  #wishes {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .balloon {
+    position: absolute;
+    bottom: -100px;
+    width: 50px;
+    height: 70px;
+    background: radial-gradient(circle, red, pink);
+    border-radius: 50%;
+    animation: fly 5s linear infinite;
+  }
+  
+  .balloon:nth-child(2) {
+    left: 25%;
+    background: radial-gradient(circle, blue, lightblue);
+    animation-duration: 6s;
+  }
+  
+  .balloon:nth-child(3) {
+    left: 50%;
+    background: radial-gradient(circle, yellow, gold);
+    animation-duration: 7s;
+  }
+  
+  .balloon:nth-child(4) {
+    left: 75%;
+    background: radial-gradient(circle, green, lime);
+    animation-duration: 8s;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-120vh);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
